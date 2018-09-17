@@ -1,31 +1,16 @@
 package com.epam.learn.lesson1;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Main {
-    static int b;
-    private boolean bol;
-    private char c;
-
-    static {
-        b = 5;
-    }
-
     public static void main(String[] args) {
-        System.out.println(b);
-    }
+        List<String> list = new ArrayList<>();
+        list.add("Barsik");
+        list.add("Murzik");
 
-    private short getSum(short a, short b) {
-        return (short) (a + b);
-    }
-
-    private int getSum(int i) {
-        short a = 2;
-
-        return i + 2;
-    }
-
-    public void getCount() {
-        int a = 0;
-
-        System.out.println(a);
+        for (String name : list) {
+            System.out.println(name);
+        }
     }
 }
